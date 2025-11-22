@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Фракталы</title>
+        <link rel="stylesheet" href="task3.css" />
+        <link rel="shortcut icon" href="g0.png" type="image/png" />
+    </head>
+    <body>
+        <div class="scroller">
+            <header>
+                <div class="name">
+                    <div class="logo">
+                        <!-- <a href="/index.php"> -->
+                        <img src="g0.gif" alt="логотип" />
+                        <!-- </a> -->
+                    </div>
+
+                    <div class="word">
+                        <h1>Фракталы</h1>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="#defn"> <h2>Понятие</h2></a>
+                    <a href="#clsf"> <h2>Классификация</h2></a>
+                    <a href="#hstr"> <h2>История</h2></a>
+                    <a href="#expl"> <h2>Генерации</h2></a>
+                </nav>
+            </header>
+
+            <main>
+                <section id="defn">
+                    <h3 class="text-center">Понятие</h3>
+                    <div id="tree" class="paragraphs">
+                        <p>
+                            Фрактал — множество, обладающее свойством
+                            самоподобия.
+                        </p>
+                        <p>
+                            Дерево, пожалуй, наиболее простой природный объект
+                            дающий представление о фрактале.
+                        </p>
+
+                        <p>
+                            Ствол разделяется на две или три ветви, каждая из
+                            них, в свою очередь также, и так далее...
+                        </p>
+
+                        <div class="pic-in-text">
+                            <img src="tree.png" alt="Дерево" />
+                        </div>
+                    </div>
+                </section>
+
+                <section id="clsf">
+                    <h3 class="text-center">Классификация</h3>
+                    <div class="row-dir">
+                        <figure>
+                            <img src="geometric.png" alt="Геометрические" />
+                            <figcaption>Геометрические</figcaption>
+                            <p class="about">
+                                Простые геометрические фигуры определённым
+                                образом делятся и преобразуются на каждой
+                                итерации по строго заданным правилам.
+                            </p>
+                        </figure>
+                        <figure>
+                            <img src="algebraic.png" alt="Алгебраические" />
+                            <figcaption>Алгебраические</figcaption>
+                            <p class="about">
+                                Формулы определяют правила на комплексной
+                                плоскости , по которым точки или фигуры
+                                повторяются и изменяются на каждой итерации.
+                            </p>
+                        </figure>
+                        <figure>
+                            <img src="stochastic.png" alt="Стохастические" />
+                            <figcaption>Стохастические</figcaption>
+                            <p class="about">
+                                При генерации объекта некоторые параметры
+                                изменяются случайным образом на каждой итерации,
+                                имитируя реалистичность.
+                            </p>
+                        </figure>
+                    </div>
+                </section>
+
+                <section id="hstr">
+                    <h3 class="text-center">История</h3>
+                    <div class="column-dir">
+                        <div class="dir">
+                            <figure class="ill">
+                                <img src="Вейерштрасс.jpg" alt="" />
+                                <figcaption>
+                                    1872 Функция Вейрштрасса
+                                </figcaption>
+                            </figure>
+                            <p class="story">
+                                Непрерывная функция, которая нигде не имеет
+                                производной. Она задается бесконечным
+                                суммированием косинусов с экспоненциально
+                                возрастающими частотами и убывающими
+                                амплитудами, создавая бесконечно изломанную,
+                                «зазубренную» структуру на всех масштабах. В
+                                любой точке ее график демонстрирует фрактальные
+                                свойства самоподобия, оставаясь одинаково
+                                «колючим» при любом увеличении.
+                            </p>
+                        </div>
+                        <div class="dir">
+                            <figure class="ill">
+                                <img src="Кох.jpg" alt="" />
+                                <figcaption>1904 Кривая Коха</figcaption>
+                            </figure>
+                            <p class="story">
+                                Фрактал, возникающий при бесконечном повторении
+                                простой процедуры: каждый отрезок ломаной линии
+                                делится на три части, и его средняя часть
+                                заменяется двумя такими же отрезками в виде
+                                равностороннего треугольника. В результате
+                                получается непрерывная замкнутая линия
+                                бесконечной длины, которая не имеет касательной
+                                ни в одной своей точке и демонстрирует свойство
+                                самоподобия, где любая малая часть повторяет
+                                структуру целого.
+                            </p>
+                        </div>
+
+                        <div class="dir">
+                            <figure class="ill">
+                                <img src="Жулиа.jpg" alt="" />
+                                <figcaption>1918 Множество Жулиа</figcaption>
+                            </figure>
+                            <p class="story">
+                                Фрактал, возникающий при итерации комплексной
+                                функции (например, zₙ₊₁ = zₙ² + c) для
+                                фиксированного параметра c. Множество состоит из
+                                всех начальных точек z₀, орбиты которых остаются
+                                ограниченными при бесконечном числе итераций, и
+                                образует бесконечно сложную границу, часто
+                                имеющую форму причудливых самоподобных спиралей,
+                                «пылевых облаков» или связных фигур. Его
+                                структура напрямую зависит от параметра c: если
+                                c принадлежит множеству Мандельброта — Жюлиа
+                                связно, если нет — представляет собой «пыль
+                                Кантора».
+                            </p>
+                        </div>
+                        <div class="dir">
+                            <figure class="ill">
+                                <img src="Хаусдорф.jpg" alt="" />
+                                <figcaption>
+                                    1918 Размерность Хаусдорфа
+                                </figcaption>
+                            </figure>
+                            <p class="story">
+                                Фундаментальное обобщение понятия размерности,
+                                позволяющее точно измерять сложность фрактальных
+                                множеств. В отличие от целочисленной
+                                топологической размерности, она может принимать
+                                дробные значения и определяется через покрытие
+                                множества шарами произвольно малого радиуса.
+                                Именно эта размерность количественно
+                                характеризует степень изрезанности фрактала: для
+                                классических объектов она совпадает с обычной
+                                размерностью (например, 1 для линии), но для
+                                фракталов принимает дробные значения (≈1.262 для
+                                снежинки Коха, ≈0.630 для множества Кантора).
+                            </p>
+                        </div>
+                        <div class="dir">
+                            <figure class="ill">
+                                <img src="Ричардсон.jpg" alt="" />
+                                <figcaption>
+                                    1961 Парадокс Ричардсона
+                                </figcaption>
+                            </figure>
+                            <p class="story">
+                                Парадокс береговой линии, эмпирически открытый
+                                Льюисом Фраем Ричардсоном — это фундаментальное
+                                наблюдение, что измеренная длина береговой линии
+                                не является постоянной величиной, а возрастает
+                                по степенному закону по мере уменьшения масштаба
+                                измерения. Чем мельче измерительный «шаг»
+                                (учитывающий всё больше бухт, мысов и даже
+                                гальки), тем больше получается длина,
+                                теоретически стремящаяся к бесконечности. Это
+                                явление демонстрирует фрактальные свойства
+                                природных объектов: береговая линия
+                                статистически самоподобна на разных масштабах.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="expl">
+                    <h3 class="text-center">Генерации</h3>
+                    <div class="column-dir">
+                        <figure>
+                            <img src="vzryv.jpg" alt="Взрыв" />
+                            <figcaption>Взрыв</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="vikhr.jpg" alt="Вихрь" />
+                            <figcaption>Вихрь</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="stolb.jpg" alt="Столбы" />
+                            <figcaption>Столбы</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="splash.jpg" alt="Всплеск" />
+                            <figcaption>Всплеск</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="silk.jpg" alt="Шёлк" />
+                            <figcaption>Шёлк</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="plast.jpg" alt="Глина" />
+                            <figcaption>Глина</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="piri.jpg" alt="Перья" />
+                            <figcaption>Перья</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="pikes.jpg" alt="Скалы" />
+                            <figcaption>Скалы</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="lava.jpg" alt="Лава" />
+                            <figcaption>Лава</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="holod.jpg" alt="Холод" />
+                            <figcaption>Холод</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="faces.jpg" alt="Грибы" />
+                            <figcaption>Грибы</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="dif.jpg" alt="Полосы" />
+                            <figcaption>Полосы</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="curver.jpg" alt="Изгиб" />
+                            <figcaption>Изгиб</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="blick.jpg" alt="Блик" />
+                            <figcaption>Блик</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="biruza.jpg" alt="Бирюза" />
+                            <figcaption>Бирюза</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section id="inv">
+                    <div class="column-dir">
+                        <!-- <button
+                            onclick="window.location.href='https://chaospro.informer.com/'"
+                        >
+                            Скачать ChaosPro
+                        </button> -->
+
+                        <a href="https://chaospro.informer.com/" class="button"
+                            >Скачать ChaosPro</a
+                        >
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p class="fs">&copy; 2025 Разработчик:</p>
+                <p class="fs">Владимир Зимин (Solist1979)</p>
+            </footer>
+        </div>
+
+        <!-- Выбор шейдера для фона -->
+        <div id="bg"></div>
+
+        <!-- 3JS -->
+        <script src="three.js"></script>
+
+        <!-- Шейдер-фон -->
+        <script src="bg.js"></script>
+
+        <!-- Запуск шейдера -->
+        <script src="init-shader.js"></script>
+    </body>
+</html>
