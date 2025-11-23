@@ -332,6 +332,16 @@ section {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    border: solid #ff3300 0.3vmax;
+    border-radius: 0.5vmax;
+    margin: 2vmin;
+    background: radial-gradient(
+        ellipse closest-corner at 40% 50%,
+        #110033cc 10vmax,
+        #330055dd 20vmax,
+        #550077ee 40vmax,
+        #770099ff 80vmax
+    );
 }
 
 .column-dir {
@@ -485,10 +495,11 @@ section {
 
 #hstr figure {
     width: 50%;
+    height: 100%;
 }
 
 #hstr img {
-    /* width: auto; */
+    width: auto;
     height: 20vh; /* 1 / 1.2 ≈ 83.33% */
     object-fit: cover;
     border: 0.2vmax solid #ff3300;
@@ -500,7 +511,7 @@ section {
 .story {
     width: 50%;
     height: auto;
-    font-size: 1.5vmin;
+    font-size: 2vmin;
     /* text-align: left; */
     padding: 1vmin;
 }
@@ -736,6 +747,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: solid #ff3300 0.3vmax;
     }
 
     #hstr figure {
