@@ -290,7 +290,7 @@ p {
         #bbbbbb calc(60vmax / var(--k) * 12) calc(60vmax / var(--k) * 12 / 1.3),
         #cccccc calc(60vmax / var(--k) * 13) calc(60vmax / var(--k) * 13 / 1.3),
         #dddddd calc(60vmax / var(--k) * 14) calc(60vmax / var(--k) * 14 / 1.3);
-    text-align: center;
+    /* text-align: center; */
     margin: 1vh;
 }
 
@@ -501,8 +501,15 @@ section {
     width: 50%;
     height: auto;
     font-size: 1.5vmin;
-    text-align: left;
+    /* text-align: left; */
     padding: 1vmin;
+}
+
+.justified-text {
+    text-align: justify;
+    hyphens: none; /* Запрещает переносы по слогам */
+    word-break: keep-all; /* Сохраняет целые слова */
+    overflow-wrap: break-word; /* Если слово слишком длинное — допустим разрыв, но только при необходимости */
 }
 
 #expl .column-dir {
@@ -736,9 +743,11 @@ footer {
     }
 
     .ill,
+    #hstr figcaption,
     .story {
         width: auto;
         margin-left: 5%;
+        font-size: 3vmin;
         height: auto;
     }
 
