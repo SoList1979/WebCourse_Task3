@@ -27,6 +27,7 @@ body {
     overflow-y: scroll; /* Включаем вертикальный скролл */
     scrollbar-width: none; /* Firefox: скрывает полосу */
     -ms-overflow-style: none; /* IE/Edge старый способ */
+    scroll-behavior: smooth;
 }
 
 /* Chrome, Safari, Edge (новые) */
